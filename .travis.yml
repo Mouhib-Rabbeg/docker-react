@@ -11,4 +11,5 @@ script:
 deploy:
   provider: heroku
   api_key:
-    secure: "3903bdff-731e-45ef-b15c-7f92fc59ba79" 
+    secure: d8b07138-c5be-4d31-8200-a438a1d69e30
+  app: docker-react2
