@@ -1,0 +1,18 @@
+version : '3'
+services:
+  react-app:
+    build: 
+      context: .
+      dockerfile: dockerfile.dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - $PWD:/app
+  test:
+    build: 
+      context: .
+      dockerfile: dockerfile.dev
+    volumes:
+      - $PWD:/app
+    command: ["npm","run","test"]
+
