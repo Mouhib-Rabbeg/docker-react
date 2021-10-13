@@ -8,3 +8,7 @@ before_install:
 script:
   - docker run -e CI=true mouhib/docker-react npm run
 
+deploy:
+  provider: heroku
+  api_key:
+    secure: "3903bdff-731e-45ef-b15c-7f92fc59ba79" 
