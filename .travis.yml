@@ -6,7 +6,7 @@ before_install:
   - docker build -t mouhib/docker-react -f dockerfile.dev .
 
 script:
-  - docker run -e CI=true mouhib/docker-react npm run
+  - docker run -e CI=true mouhib/docker-react npm run test -- --coverage
 
 deploy:
   provider: heroku
